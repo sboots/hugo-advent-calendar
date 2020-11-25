@@ -1,7 +1,7 @@
 <script type="text/template" id="itemCardTemplate">
 
-  <div class="card mb-5">
-    <h2 class="card-header"><%- item.date %></h2>
+  <div class="card mb-5" id="card-<%- item.date %>">
+    <h2 class="card-header"><%- moment(item.date).format("dddd, MMMM Do, YYYY") %></h2>
     <div class="card-body">
       <% if(_.get(item, 'imagesrc')) { %>
       <img src="<%- item.imagesrc %>" class="ac-card-image" alt="<%- item.title %>">
