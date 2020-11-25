@@ -1,0 +1,145 @@
+/* 
+Styles for a simple Advent Calendar static site
+ */
+
+.heading-nav a.active {
+  font-weight: bold;
+}
+
+#header {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1.1rem;
+}
+
+#header h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+  text-align: center;
+}
+
+#header h1 a {
+  color: #212529;
+}
+
+#header .site-pre-title {
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 0.3rem;
+}
+
+#nav {
+  padding-top: 1.25rem;
+  padding-bottom: 1.0rem;
+  background-color: #efeff0;
+  border-color: #e2e3e5;
+  border-top: 1px solid #e2e3e5;
+  border-bottom: 1px solid #e2e3e5;
+  margin-bottom: 1.5rem;
+}
+
+#footer {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.0rem;
+  border-top: 1px solid #e2e3e5;
+  background-color: #efeff0;
+}
+
+#main .ac-card-image {
+  float: right;
+  max-width: 550px;
+  max-height: 550px;
+  width: 35%;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+
+/* 
+#main h2, #main h3, #main h4, #main h5, #main h6 {
+  margin-bottom: 1.2rem;
+}
+
+#main h2 {
+  font-size: 2.4rem;
+  page-break-after: avoid;
+}
+#main h3 {
+  font-size: 2.2rem;
+}
+#main h4 {
+  font-size: 1.8rem;
+}
+#main h5 {
+  font-size: 1.4rem;
+}
+#main h6 {
+  font-size: 1.2rem;
+} */
+
+#main p, #main blockquote, #main ul, #main ol {
+  font-size: 1.1rem;
+  font-size: 18px;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  line-height: 1.65;
+  
+
+  /* max-width: 53rem; */
+  margin: 0 auto;
+  margin-bottom: 1.3rem;
+}
+
+
+/* Print styles */
+@media print {
+
+  #header h1 {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+  
+  #header h1 a {
+    color: #212529;
+    text-decoration: none;
+  }
+
+  #header {
+    border-bottom: 1px solid #e2e3e5;
+    margin-bottom: 1.3rem;
+  }
+
+  #main blockquote {
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+  }
+
+  .irt-aside {
+    border: 1px solid #e2e3e5;
+  }
+
+  #main .irt-aside h5 {
+    font-weight: bold;
+    font-size: 26px;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+}
+
+/* Media queries */
+@media (max-width: 767px) {
+  #header h1 {
+    font-size: 2rem;
+  }
+
+  #header {
+    margin-top: 0;
+  }
+}

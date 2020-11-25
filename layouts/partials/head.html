@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta name="description" content="{{ .Params.summary | default .Site.Params.description}}"> 
+    
+	<meta name="author" content="{{ .Site.Params.author | default .Site.Author }}">  
+  <!-- <base href="{{ .Site.BaseURL }}"> -->
+  <title>{{ if .Title }}{{ .Title }} – {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}</title>
+
+{{ template "_internal/opengraph.html" . }}
+{{ template "_internal/twitter_cards.html" . }}
+
+  <!-- Optional robots tag, to avoid indexing the "display all" page separately -->
+  {{ if .Params.noindex }}
+  <meta name="robots" content="noindex"> 
+  {{ end }}
+
+  <!-- CSS here -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link href="/css/styles.css" rel="stylesheet">
+
+</head>
+<body class="">
+
+  <a class="sr-only sr-only-focusable" href="#main">Skip to main content</a>
