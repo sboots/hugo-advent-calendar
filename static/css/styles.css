@@ -121,11 +121,6 @@ Styles for a simple Advent Calendar static site
     text-decoration: none;
   }
 
-  #header {
-    border-bottom: 1px solid #e2e3e5;
-    margin-bottom: 1.3rem;
-  }
-
   #main blockquote {
     border-top: none;
     border-bottom: none;
@@ -133,16 +128,11 @@ Styles for a simple Advent Calendar static site
     border-left: none;
   }
 
-  .irt-aside {
-    border: 1px solid #e2e3e5;
+  #nav {
+    border-top: none;
+    margin-bottom: 3rem;
   }
 
-  #main .irt-aside h5 {
-    font-weight: bold;
-    font-size: 26px;
-    padding-bottom: 0;
-    border-bottom: none;
-  }
 
 }
 

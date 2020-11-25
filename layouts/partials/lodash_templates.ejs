@@ -12,7 +12,7 @@
       <% } %>
       <p class="card-text"><%- item.description %></p>
       <% if(_.get(item, 'visiturl')) { %>
-      <a href="<%- item.visiturl %>" class="btn btn-primary" target="_blank">Visit</a>
+      <a href="<%- item.visiturl %>" class="btn btn-primary d-print-none" target="_blank">Visit</a>
       <% } %>
     </div>
   </div>
