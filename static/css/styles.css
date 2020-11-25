@@ -6,6 +6,15 @@ Styles for a simple Advent Calendar static site
   font-weight: bold;
 }
 
+#nav .site-subtitle {
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+#nav .site-subtitle, #footer {
+  color: #3b424a;
+}
+
 #header {
   margin-top: 1.5rem;
   padding-top: 1rem;

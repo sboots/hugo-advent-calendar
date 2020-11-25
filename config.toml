@@ -2,6 +2,11 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "2020 Advent Calendar"
 
+[params]
+  author = "Your name here"
+  description = "For an exciting 2021 ahead!"
+  footer = "To infinity, and beyond…"
+
 # Thanks to
 # https://discourse.gohugo.io/t/lodash-template-tags-are-escaped-since-hugo-0-19/6299/4
 [mediaTypes."text/template"]

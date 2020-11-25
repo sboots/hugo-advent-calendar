@@ -2,7 +2,9 @@
 
   <div class="container">
     <aside class="d-print-none">
-      <p>Footer content here</p>
+      {{ if .Site.Params.footer -}}
+      <p>{{.Site.Params.footer}}</p>
+      {{ end }}
     </aside>
 
   </div>

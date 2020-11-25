@@ -1,7 +1,10 @@
 <section id="nav" class="d-print-none">
 
   <div class="container">
-    <h1>{{ .Site.Title }}</h1>
+    <h1 class="site-title">{{ .Site.Title }}</h1>
+    {{ if .Site.Params.description -}}
+    <p class="site-subtitle">{{.Site.Params.description}}</p>
+    {{ end }}
   </div>
 
 </section>
