@@ -1,0 +1,17 @@
+{
+  "name": "hugo-advent-calendar",
+  "version": "1.0.0",
+  "description": "A simple, single-page advent calendar powered by a Google Spreadsheet",
+  "repository": "sboots/hugo-advent-calendar",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:hugo",
+    "build:hugo": "hugo -D -v",
+    "deploy": "npm run build && gh-pages -d public -r git@github.com:hugo-advent-calendar-2020/hugo-advent-calendar-2020.github.io.git -b master"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
