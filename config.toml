@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://hugo-advent-calendar-2020.github.io/"
 languageCode = "en-us"
 title = "2020 Advent Calendar"
 
