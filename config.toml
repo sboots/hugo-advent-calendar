@@ -1,3 +1,18 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "2020 Advent Calendar"
+
+# Thanks to
+# https://discourse.gohugo.io/t/lodash-template-tags-are-escaped-since-hugo-0-19/6299/4
+[mediaTypes."text/template"]
+  suffixes = ["ejs"]
+
+[outputFormats.EJS]
+  mediaType = "text/template"
+  isHTML = true
+  isPlainText = true
+
+# Thanks to
+# https://discourse.gohugo.io/t/raw-html-getting-omitted-in-0-60-0/22032/2
+[markup.goldmark.renderer]
+  unsafe = true

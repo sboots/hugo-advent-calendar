@@ -41,6 +41,10 @@ Styles for a simple Advent Calendar static site
   margin-bottom: 1.5rem;
 }
 
+#main {
+  min-height: 12rem;
+}
+
 #footer {
   margin-top: 2rem;
   padding-top: 1.5rem;

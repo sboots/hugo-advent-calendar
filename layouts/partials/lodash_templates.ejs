@@ -1,0 +1,32 @@
+<script type="text/template" id="itemCardTemplate">
+
+  <div class="card mb-5">
+    <h2 class="card-header"><%- item.date %></h2>
+    <div class="card-body">
+      <% if(_.get(item, 'imagesrc')) { %>
+      <img src="<%- item.imagesrc %>" class="ac-card-image" alt="<%- item.title %>">
+      <% } %>
+      <h3 class="card-title"><%- item.title %></h3>
+      <% if(_.get(item, 'subtitle')) { %>
+      <p class="card-subtitle"><%- item.subtitle %></p>
+      <% } %>
+      <p class="card-text"><%- item.description %></p>
+      <% if(_.get(item, 'visiturl')) { %>
+      <a href="<%- item.visiturl %>" class="btn btn-primary" target="_blank">Visit</a>
+      <% } %>
+    </div>
+  </div>
+
+</script>
+
+<script type="text/template" id="itemCardPlaceholderTemplate">
+
+  <div class="mt-5 mb-4">
+    <div class="alert alert-warning pt-5 pb-5 text-center" role="alert">
+      <p><%- message %></p>
+
+      <a href="javascript:location.reload()" class="btn btn-warning">Reload page</a>
+    </div>
+  </div>
+
+</script>
