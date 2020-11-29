@@ -15,6 +15,10 @@ Styles for a simple Advent Calendar static site
   color: #3b424a;
 }
 
+.ac-text-muted {
+  color: #56606c
+}
+
 #header {
   margin-top: 1.5rem;
   padding-top: 1rem;
