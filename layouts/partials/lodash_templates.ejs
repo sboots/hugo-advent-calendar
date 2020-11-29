@@ -10,7 +10,7 @@
       <% if(_.get(item, 'subtitle')) { %>
       <p class="card-subtitle"><%- item.subtitle %></p>
       <% } %>
-      <p class="card-text"><%- item.description %></p>
+      <p class="card-text"><%= item.description %></p>
       <% if(_.get(item, 'visiturl')) { %>
       <a href="<%- item.visiturl %>" class="btn btn-primary d-print-none" target="_blank">Visit</a>
       <% } %>

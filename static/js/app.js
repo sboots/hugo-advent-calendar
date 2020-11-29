@@ -7,6 +7,7 @@ app.showAllDates = 0;
 
 app.spreadsheetId = "1Fk2HrHM-2CPUCIlORGcwnYELPOqTeMtYbCLemOu6C10";
 app.spreadsheetUrl = "https://spreadsheets.google.com/feeds/list/" + app.spreadsheetId + "/1/public/values?alt=json"; 
+app.useMarkdown = true;
 
 app.data = [];
 
@@ -30,6 +31,12 @@ app.retrieveSpreadsheetJson = function () {
         imagesrc: this.gsx$imagesrc.$t,
         visiturl: this.gsx$visiturl.$t,
       };
+
+      // Optionally change Markdown-formatted text in the description field to HTML
+      if(app.useMarkdown !== false) {
+        item.description = app.converter.makeHtml(item.description);
+        // console.log(item.description);
+      }
     
       // Check if the date is in the past
       // Thanks to
@@ -101,6 +108,13 @@ $(function () {
 
   app.itemCardTemplate = _.template($("#itemCardTemplate").html());
   app.itemCardPlaceholderTemplate = _.template($("#itemCardPlaceholderTemplate").html());
+
+  app.converter = new showdown.Converter({
+    simpleLineBreaks: true,
+    openLinksInNewWindow: true,
+    ghCompatibleHeaderId: true,
+    emoji: true
+  });
 
   // Run the spreadsheet lookup!
   app.retrieveSpreadsheetJson(app.spreadsheetUrl);
